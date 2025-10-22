@@ -1,10 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-  --main-bg-color: brown;
-  font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --main-bg-color: #F5F5F5;
+  font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 3rem);
+  font-family: "Montserrat", sans-serif;
 }
 a{
-    text-decoration: none; /* remove o sublinhado dos links */
-    color: black; /* altera a cor de todos os links das páginas */
+    text-decoration: none;
+    color: black;
 }
+
+h1, h2, h3, h4, h5, h6{
+   font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+/*====================
+HEADER
+====================*/
+header nav {
+  display: flex;
+  justify-content: center;
+}
+header nav ul{
+  display: flex;
+  gap: 20px;
+  border: 1px solid #E5E5E5;
+  margin: 2vw 0 0 0;
+  border-radius: 20px;
+  padding: 3px;
+}
+header nav ul li a {
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: block;
+}
+header nav ul li a.atual {
+  background-color: black;
+  color: white;
+}
+
+/*====================
+BANNER
+====================*/
+
+section.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5vw auto 3vw auto;
+  width: 80%;
+  max-width: 1000px;
+}
+section.banner h1 {
+  width: 50%;
+  font-size: 3rem;
+}
+section.banner h1 span {
+  font-weight: bold;
+}
+section.banner p {
+  font-size: 1.2rem;
+  color: #5A5A5A;
+}
+
+/*====================
+POSTS
+====================*/
+
+section.posts {
+  margin: 5vw auto 0 auto;
+  width: 80%;
+  max-width: 1000px;
+}
+section.posts > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 23px;
+}
+section.posts > ul > li {
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 1px 1px 4px rgb(218, 218, 218);
+  padding: 1.3vw;
+}
+section.posts > ul > li h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 0.8vw 0;
+  color: #1E1E1E;
+}
+section.posts > ul > li p {
+  line-height: 1.5rem;
+  color: #757575;
+  margin: 1vw 0 0 0;
+}
+section.posts > ul > li > ul {
+  display: flex;
+  gap: 20px;
+  margin: 0.7vw 0 0 0;
+
+}
+section.posts > ul > li ul li {
+  background-color: #e5e5e5;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+/*====================
+POSTS
+====================*/
+
+footer {
+  margin: 3vw auto 3vw auto;
+  width: 80%;
+  max-width: 1000px;
+}
+
+footer p {
+  color: #7C7C7C;
+  text-align: center;
+  background-color: white;
+  border-radius: 18.5874763287467823px;
+  border: 1px solid #C2C2C2;
+  padding: 15px 20px;
+}
+
+/*===============================================================
+ABOUT
+===============================================================*/
+
+section.banner p{
+  color: #757575;
+
+}
+
+/*===============================================================
+PROJECTS
+===============================================================*/
+section.projetos {
+  margin: 5vw auto 0 auto;
+  width: 80%;
+  max-width: 1000px;
+}
+.projetos ul li {
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 1px 1px 4px rgb(218, 218, 218);
+  padding: 1.3vw;
+}
+section.projetos h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0 0 0.8vw 0;
+  color: #1E1E1E;
+}
+section.projetos p {
+  color: #757575;
+  margin: 0 0 0.6vw 0;
+  font-size: 0.8rem;
+}
+section.projetos li.m {
+  margin: 0 0 1vw 0;
+
+}
+section.projetos li.M {
+  margin: 0 0 4vw 0;
+  
+}
+
+
+
+
+
+
 
